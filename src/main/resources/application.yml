@@ -1,0 +1,73 @@
+server:
+  port: 8484
+#------H2 DB configuration details  
+#spring:
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password: ''
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    show-sql: true
+#    defer-datasource-initialization: true
+
+#-------MySQL DB configuration details---------
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jrtp19_major_proj_dc_module
+    username: root
+    password: sanjushyam
+  
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+#------------ AWS RDS DB Configuration details------
+
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/jrtp19_mini_proj_2
+#    username: root
+#    password: sanjushyam
+#  
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: kumarsanjuashokit@gmail.com
+#    password: sanjushyam@001
+#    properties:
+#      mail:
+#        smtp:
+#          starttls:
+#            enable: true
+#          auth: true
+# 
+#
+#app:
+# messages:
+#   userSaveSucc: User saved
+#   userSaveFail: failed to save a User
+#   userDelSucc: User deleted
+#   userDelFail: failed to delete
+#   emailDuplicate: "duplicate"
+#   emailUnique: "unique"
+#   emailFrom: "kumarsanjuashokit@gmail.com"
+#   notFoundData: "data not found"
+    
+    
